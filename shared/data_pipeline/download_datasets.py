@@ -58,12 +58,16 @@ def download_kaggle_dataset(ref: str, dest: str) -> None:
 
 def download_huggingface(ref: str, dest: str) -> None:
     from datasets import load_dataset
-    ds = load_dataset(ref)
     Path(dest).mkdir(parents=True, exist_ok=True)
+    ds = load_dataset(ref)
     ds.save_to_disk(dest)
 
 
 def download_all(names: list[str] | None = None) -> None:
+    if names is not None:
+        unknown = set(names) - DATASETS.keys()
+        if unknown:
+            raise ValueError(f"Unknown dataset names: {unknown}. Available: {list(DATASETS.keys())}")
     targets = {k: v for k, v in DATASETS.items() if names is None or k in names}
     handlers = {
         "zenodo": lambda cfg: download_zenodo(cfg["record_id"], cfg["dest"]),
@@ -72,8 +76,11 @@ def download_all(names: list[str] | None = None) -> None:
     }
     for name, cfg in targets.items():
         print(f"Downloading {name}...")
-        handlers[cfg["type"]](cfg)
-        print(f"  ✓ {name}")
+        try:
+            handlers[cfg["type"]](cfg)
+            print(f"  ✓ {name}")
+        except Exception as e:
+            print(f"  ✗ {name}: {e}")
 
 
 if __name__ == "__main__":

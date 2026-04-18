@@ -1,4 +1,3 @@
-import pytest
 from unittest.mock import patch, MagicMock
 from shared.data_pipeline.download_datasets import DATASETS, download_all
 
@@ -14,3 +13,4 @@ def test_download_all_calls_correct_handler():
         download_all(names=["pid2graph"])
         mock_z.assert_called_once()
         mock_k.assert_not_called()
+        mock_hf.assert_not_called()
