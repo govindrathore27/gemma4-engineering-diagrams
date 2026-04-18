@@ -1,0 +1,10 @@
+unsloth[colab-new]>=2024.12
+trl>=0.12
+transformers>=4.47
+datasets>=3.0
+networkx>=3.3
+requests>=2.31
+pytest>=8.0
+paddleocr>=2.8
+Pillow>=10.0
+torch>=2.4
