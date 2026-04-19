@@ -1,0 +1,7 @@
+{
+  "annotations": [
+    {"category": "resistor", "id": "R1"},
+    {"category": "LED", "id": "D1"},
+    {"category": "battery", "id": "V1"}
+  ]
+}

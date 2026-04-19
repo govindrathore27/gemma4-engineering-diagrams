@@ -12,7 +12,7 @@ class TrainConfig:
     base_model: str = "google/gemma-4-e4b-it"
     lora_r: int = 16
     lora_alpha: int = 32
-    lora_dropout: float = 0.05
+    lora_dropout: float = 0.0
     epochs: int = 3
     batch_size: int = 2
     grad_accum: int = 8

@@ -1,0 +1,7 @@
+{
+  "dimensions": [
+    {"label": "shaft_diameter", "tolerance": "0.005"},
+    {"label": "hole_spacing", "tolerance": "0.02"},
+    {"label": "overall_length", "tolerance": "0.5"}
+  ]
+}

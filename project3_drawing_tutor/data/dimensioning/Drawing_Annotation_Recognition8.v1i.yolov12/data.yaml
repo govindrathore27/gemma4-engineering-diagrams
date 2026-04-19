@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['dt', 'text']
+
+roboflow:
+  workspace: njsgcs-spmf4
+  project: drawing-annotation-recognition8
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/njsgcs-spmf4/drawing-annotation-recognition8/dataset/1
