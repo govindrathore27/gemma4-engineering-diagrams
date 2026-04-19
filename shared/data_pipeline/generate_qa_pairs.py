@@ -162,6 +162,79 @@ def _netlist_from_components(components: list[str]) -> str:
     return "\n".join(lines)
 
 
+CIRCUIT1K_CLASSES = {
+    0: "battery",
+    1: "resistor",
+    2: "capacitor",
+    3: "inductor",
+    4: "diode",
+}
+
+
+def parse_circuit1k_yolo(annotation_path: str) -> Iterator[dict]:
+    """Parse circuit1k YOLO annotation .txt file, generate circuit QA pairs."""
+    path = Path(annotation_path)
+    if not path.exists() or path.stat().st_size == 0:
+        return
+
+    components: list[str] = []
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            parts = line.strip().split()
+            if len(parts) >= 5:
+                class_id = int(parts[0])
+                components.append(CIRCUIT1K_CLASSES.get(class_id, f"component_{class_id}"))
+
+    if not components:
+        return
+
+    comp_counts: dict[str, int] = {}
+    for c in components:
+        comp_counts[c] = comp_counts.get(c, 0) + 1
+
+    # Q1: describe the circuit
+    yield {
+        "instruction": "Describe what this circuit does based on its components.",
+        "input": "",
+        "output": (
+            f"This circuit contains: {', '.join(f'{v}x {k}' for k,v in comp_counts.items())}. "
+            + _circuit_description(list(comp_counts.keys()))
+        ),
+    }
+
+    # Q2: component count
+    yield {
+        "instruction": "How many components are in this circuit?",
+        "input": "",
+        "output": json.dumps({"total": len(components), "by_type": comp_counts}),
+    }
+
+    # Q3: current limiter if resistor + diode
+    resistors = [c for c in components if c == "resistor"]
+    diodes = [c for c in components if c == "diode"]
+    if resistors and diodes:
+        yield {
+            "instruction": "What limits the current through the diode in this circuit?",
+            "input": "",
+            "output": "A resistor in series with the diode limits the current flow.",
+        }
+
+    # Q4: SPICE netlist
+    yield {
+        "instruction": "Generate a SPICE-compatible netlist for this circuit.",
+        "input": "",
+        "output": _netlist_from_components(components),
+    }
+
+    # Q5: what-if resistor doubles
+    if "resistor" in comp_counts:
+        yield {
+            "instruction": "If all resistors were doubled in value, how would that affect the circuit?",
+            "input": "",
+            "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes.",
+        }
+
+
 def parse_as1100(annotation_path: str) -> Iterator[dict]:
     with open(annotation_path, encoding="utf-8") as f:
         data = json.load(f)
@@ -216,10 +289,98 @@ def _machining_checklist(dimensions: list[dict]) -> str:
     return "\n".join(items)
 
 
+def parse_as1100_parquet(parquet_path: str) -> Iterator[dict]:
+    """Extract QA pairs directly from AS1100 parquet files (pre-formatted dataset)."""
+    try:
+        import pandas as pd
+    except ImportError:
+        return
+
+    df = pd.read_parquet(parquet_path)
+    for _, row in df.iterrows():
+        user_q = str(row.get("user_query", "")).strip()
+        assistant_r = str(row.get("assistant_response", "")).strip()
+        if user_q and assistant_r:
+            yield {
+                "instruction": user_q,
+                "input": str(row.get("system_prompt", "")).strip(),
+                "output": assistant_r,
+            }
+
+
+def parse_dimensioning_yolo(annotation_path: str) -> Iterator[dict]:
+    """Parse YOLO dimension annotation .txt, generate drawing QA pairs."""
+    path = Path(annotation_path)
+    if not path.exists() or path.stat().st_size == 0:
+        return
+
+    dt_count = 0
+    text_count = 0
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            parts = line.strip().split()
+            if len(parts) >= 1:
+                if parts[0] == "0":
+                    dt_count += 1
+                elif parts[0] == "1":
+                    text_count += 1
+
+    if dt_count + text_count == 0:
+        return
+
+    yield {
+        "instruction": "How many dimension annotations are visible in this engineering drawing?",
+        "input": "",
+        "output": json.dumps({
+            "dimension_tags": dt_count,
+            "text_labels": text_count,
+            "total_annotations": dt_count + text_count,
+        }),
+    }
+
+    yield {
+        "instruction": "Create a manufacturing checklist for this engineering drawing.",
+        "input": "",
+        "output": _drawing_checklist(dt_count, text_count),
+    }
+
+    if dt_count > 0:
+        yield {
+            "instruction": "List the types of annotations present in this drawing.",
+            "input": "",
+            "output": (
+                f"This drawing contains {dt_count} dimension tag(s) "
+                f"and {text_count} text label(s)."
+            ),
+        }
+
+
+def _drawing_checklist(dt_count: int, text_count: int) -> str:
+    items = [
+        "[ ] Verify title block completeness (part number, revision, scale, material)",
+        "[ ] Check all dimension tags are legible and unambiguous",
+    ]
+    if dt_count > 5:
+        items.append(f"[ ] Inspect all {dt_count} dimension tags for tolerance compliance")
+    if text_count > 0:
+        items.append(
+            f"[ ] Cross-reference {text_count} text annotation(s) with part specification"
+        )
+    items += [
+        "[ ] Verify surface finish callouts",
+        "[ ] Confirm all geometric tolerances are achievable on target machine",
+        "[ ] Final inspection sign-off",
+    ]
+    return "\n".join(items)
+
+
 _PARSERS = {
     "graphml": parse_graphml,
     "cghd": parse_cghd,
+    "circuit1k_yolo": parse_circuit1k_yolo,
     "as1100": parse_as1100,
+    "as1100_parquet": parse_as1100_parquet,
+    "dimensioning_yolo": parse_dimensioning_yolo,
 }
 
 

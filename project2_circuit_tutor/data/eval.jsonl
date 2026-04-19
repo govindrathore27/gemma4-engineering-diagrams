@@ -1,0 +1,871 @@
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nD3 N3 0 1N4148\nD4 N4 0 1N4148\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x capacitor, 5x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 8, \"by_type\": {\"capacitor\": 3, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nC2 N2 0 100n\nC3 N3 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor, 2x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"resistor\": 3, \"diode\": 2}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 5x diode, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"diode\": 5, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nD3 N3 0 1N4148\nD4 N4 0 1N4148\nD5 N5 0 1N4148\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 4x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"diode\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nD3 N3 0 1N4148\nD4 N4 0 1N4148\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor, 1x inductor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"resistor\": 3, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nL1 N1 N2 10m\nR3 N3 N4 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 2x diode, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"resistor\": 4, \"diode\": 2, \"battery\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 1x diode, 1x inductor, 2x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"capacitor\": 1, \"diode\": 1, \"inductor\": 1, \"resistor\": 2}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nD1 N1 0 1N4148\nL1 N1 N2 10m\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor, 1x inductor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"resistor\": 3, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"resistor\": 3, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 1x inductor, 2x resistor, 1x diode. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"capacitor\": 1, \"inductor\": 1, \"resistor\": 2, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nL1 N1 N2 10m\nR1 N1 N2 1k\nR2 N2 N3 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 3x resistor, 1x inductor, 1x diode. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"capacitor\": 1, \"resistor\": 3, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 1x inductor, 2x resistor, 1x diode. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"capacitor\": 1, \"inductor\": 1, \"resistor\": 2, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nL1 N1 N2 10m\nR1 N1 N2 1k\nR2 N2 N3 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"resistor\": 3, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"resistor\": 3, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 4x resistor, 1x inductor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"resistor\": 4, \"inductor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nL1 N1 N2 10m\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor, 1x inductor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"resistor\": 3, \"inductor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nL1 N1 N2 10m\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x resistor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 3, \"by_type\": {\"resistor\": 2, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"resistor\": 3, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 1x inductor, 1x diode, 2x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"inductor\": 1, \"diode\": 1, \"resistor\": 2}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nL1 N1 N2 10m\nD1 N1 0 1N4148\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 1x inductor, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 4, \"inductor\": 1, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nL1 N1 N2 10m\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 1x inductor, 3x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"capacitor\": 1, \"inductor\": 1, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nL1 N1 N2 10m\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 2x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 1, \"resistor\": 2, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 1x capacitor, 2x resistor, 1x diode. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"capacitor\": 1, \"resistor\": 2, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x inductor, 2x resistor, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"inductor\": 1, \"resistor\": 2, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nL1 N1 N2 10m\nR1 N1 N2 1k\nR2 N2 N3 1k\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 1x capacitor, 3x resistor, 1x diode. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"capacitor\": 1, \"resistor\": 3, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"resistor\": 3, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 2x resistor, 1x inductor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 1, \"resistor\": 2, \"inductor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nL1 N1 N2 10m\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 2x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 1, \"resistor\": 2, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 3x resistor, 1x inductor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"capacitor\": 1, \"resistor\": 3, \"inductor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nL1 N1 N2 10m\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 1x inductor, 1x diode, 2x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"inductor\": 1, \"diode\": 1, \"resistor\": 2}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nL1 N1 N2 10m\nD1 N1 0 1N4148\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 2x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 1, \"resistor\": 2, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 1x battery, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 4, \"battery\": 1, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 1x battery, 5x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"capacitor\": 1, \"battery\": 1, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 1x capacitor, 1x battery. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 3, \"capacitor\": 1, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x battery, 2x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 2, \"resistor\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 4x resistor, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"resistor\": 4, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x capacitor, 4x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"capacitor\": 2, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nC2 N2 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 2x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 4, \"capacitor\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nC1 N1 0 100n\nC2 N2 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 6x resistor, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"resistor\": 6, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nC1 N1 0 100n\nR6 N6 N7 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x capacitor, 3x battery, 1x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"capacitor\": 2, \"battery\": 3, \"resistor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nC2 N2 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 3x resistor, 2x inductor, 2x diode. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 8, \"by_type\": {\"capacitor\": 1, \"resistor\": 3, \"inductor\": 2, \"diode\": 2}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nL1 N1 N2 10m\nL2 N2 N3 10m\nD1 N1 0 1N4148\nD2 N2 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x battery, 4x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 2, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 5x resistor, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 5, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nC1 N1 0 100n\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 8x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 9, \"by_type\": {\"capacitor\": 1, \"resistor\": 8}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\nR7 N7 N8 1k\nR8 N8 N9 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x battery, 4x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 2, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x battery, 5x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"battery\": 2, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 1x capacitor, 3x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"capacitor\": 1, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 1x capacitor, 4x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"capacitor\": 1, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 1x capacitor, 5x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"battery\": 1, \"capacitor\": 1, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x capacitor, 7x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 11, \"by_type\": {\"capacitor\": 4, \"resistor\": 7}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nC2 N2 0 100n\nC3 N3 0 100n\nC4 N4 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\nR7 N7 N8 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 5x resistor, 3x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 8, \"by_type\": {\"resistor\": 5, \"capacitor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nC1 N1 0 100n\nC2 N2 0 100n\nC3 N3 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x diode, 1x capacitor, 3x resistor, 1x inductor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"diode\": 1, \"capacitor\": 1, \"resistor\": 3, \"inductor\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nL1 N1 N2 10m\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 8x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 8, \"by_type\": {\"resistor\": 8}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\nR7 N7 N8 1k\nR8 N8 N9 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 9x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 10, \"by_type\": {\"battery\": 1, \"resistor\": 9}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\nR7 N7 N8 1k\nR8 N8 N9 1k\nR9 N9 N10 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 6x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"battery\": 1, \"resistor\": 6}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 6x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"battery\": 1, \"resistor\": 6}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 11x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 12, \"by_type\": {\"battery\": 1, \"resistor\": 11}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\nR7 N7 N8 1k\nR8 N8 N9 1k\nR9 N9 N10 1k\nR10 N10 N11 1k\nR11 N11 N12 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 1, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 6x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"battery\": 1, \"resistor\": 6}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 2x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 3, \"capacitor\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nC1 N1 0 100n\nC2 N2 0 100n\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x capacitor, 3x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"capacitor\": 2, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nC2 N2 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 2x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 4, \"battery\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 1x inductor, 1x diode, 2x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"capacitor\": 1, \"inductor\": 1, \"diode\": 1, \"resistor\": 2}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nL1 N1 N2 10m\nD1 N1 0 1N4148\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 1, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x battery, 3x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 2, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x battery, 3x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 2, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 1x battery, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 3, \"battery\": 1, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 4x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 4, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 8x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 9, \"by_type\": {\"battery\": 1, \"resistor\": 8}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\nR7 N7 N8 1k\nR8 N8 N9 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 5x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"capacitor\": 1, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 8x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 9, \"by_type\": {\"battery\": 1, \"resistor\": 8}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\nR7 N7 N8 1k\nR8 N8 N9 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 6x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"battery\": 1, \"resistor\": 6}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x resistor, 1x capacitor, 1x inductor, 1x diode. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 2, \"capacitor\": 1, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nC1 N1 0 100n\nL1 N1 N2 10m\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 4, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 6x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"battery\": 1, \"resistor\": 6}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x battery, 1x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 3, \"by_type\": {\"battery\": 2, \"resistor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x battery, 2x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 2, \"resistor\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x battery, 2x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 3, \"resistor\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x resistor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 3, \"by_type\": {\"resistor\": 2, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 9x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 10, \"by_type\": {\"capacitor\": 1, \"resistor\": 9}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\nR7 N7 N8 1k\nR8 N8 N9 1k\nR9 N9 N10 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 4x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 5x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 2x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 3, \"battery\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 5x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x capacitor, 1x battery, 2x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"capacitor\": 2, \"battery\": 1, \"resistor\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nC2 N2 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x battery, 3x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 2, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x capacitor, 3x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"capacitor\": 2, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nC2 N2 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 3x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"resistor\": 4, \"capacitor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nC1 N1 0 100n\nC2 N2 0 100n\nC3 N3 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x battery, 3x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 2, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 4x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 2x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 3, \"battery\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 5x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 5x resistor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 5, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 3x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"capacitor\": 1, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor, 1x inductor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"resistor\": 3, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 3x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 3, \"battery\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 4x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 4, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 2x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 3, \"by_type\": {\"capacitor\": 1, \"resistor\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 6x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 6}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 6x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"battery\": 1, \"resistor\": 6}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 5x resistor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 5, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x battery, 4x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"battery\": 3, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x battery, 5x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"battery\": 2, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 1x capacitor, 1x battery. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 3, \"capacitor\": 1, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nC1 N1 0 100n\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 4, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 5x resistor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 5, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 1, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 6x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"capacitor\": 1, \"resistor\": 6}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 5x resistor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 5, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 3x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 3, \"battery\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 2x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 4, \"battery\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x capacitor, 1x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"capacitor\": 3, \"resistor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nC2 N2 0 100n\nC3 N3 0 100n\nR1 N1 N2 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 1, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"resistor\": 3, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x battery, 2x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 2, \"resistor\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x battery, 3x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 2, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 5x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 4x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 4x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 5x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 1, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"resistor\": 3, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 6x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"battery\": 1, \"resistor\": 6}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 5x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 4, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 4x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 1x capacitor, 1x battery. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 4, \"capacitor\": 1, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 5x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"capacitor\": 1, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 4, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 2x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 4, \"capacitor\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nC1 N1 0 100n\nC2 N2 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 2x battery, 3x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"capacitor\": 1, \"battery\": 2, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 6x resistor, 1x battery. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 8, \"by_type\": {\"capacitor\": 1, \"resistor\": 6, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x capacitor, 1x battery, 2x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"capacitor\": 2, \"battery\": 1, \"resistor\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nC2 N2 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x capacitor, 4x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"capacitor\": 2, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nC2 N2 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x capacitor, 1x battery, 4x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"capacitor\": 2, \"battery\": 1, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nC2 N2 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 1x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 2, \"by_type\": {\"battery\": 1, \"resistor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 1, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x resistor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 3, \"by_type\": {\"resistor\": 2, \"battery\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 3x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 3, \"capacitor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nC1 N1 0 100n\nC2 N2 0 100n\nC3 N3 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 1, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 4x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"battery\": 1, \"resistor\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 1, \"resistor\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 10x resistor, 4x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 14, \"by_type\": {\"resistor\": 10, \"battery\": 4}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\nR7 N7 N8 1k\nR8 N8 N9 1k\nR9 N9 N10 1k\nR10 N10 N11 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 7x resistor, 3x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 10, \"by_type\": {\"resistor\": 7, \"battery\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\nR7 N7 N8 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x inductor, 1x diode, 1x component_5, 2x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"inductor\": 1, \"diode\": 1, \"component_5\": 1, \"resistor\": 2}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nL1 N1 N2 10m\nD1 N1 0 1N4148\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x component_5, 5x diode, 1x capacitor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 8, \"by_type\": {\"component_5\": 2, \"diode\": 5, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nD3 N3 0 1N4148\nD4 N4 0 1N4148\nD5 N5 0 1N4148\nC1 N1 0 100n\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 6x diode, 2x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 8, \"by_type\": {\"diode\": 6, \"component_5\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nD3 N3 0 1N4148\nD4 N4 0 1N4148\nD5 N5 0 1N4148\nD6 N6 0 1N4148\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x component_5, 6x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"component_5\": 1, \"diode\": 6}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nD3 N3 0 1N4148\nD4 N4 0 1N4148\nD5 N5 0 1N4148\nD6 N6 0 1N4148\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 5x diode, 1x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"diode\": 5, \"component_5\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nD3 N3 0 1N4148\nD4 N4 0 1N4148\nD5 N5 0 1N4148\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 5x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"capacitor\": 1, \"resistor\": 5}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x component_5, 8x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 9, \"by_type\": {\"component_5\": 1, \"diode\": 8}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nD3 N3 0 1N4148\nD4 N4 0 1N4148\nD5 N5 0 1N4148\nD6 N6 0 1N4148\nD7 N7 0 1N4148\nD8 N8 0 1N4148\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 5x diode, 2x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"diode\": 5, \"component_5\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nD3 N3 0 1N4148\nD4 N4 0 1N4148\nD5 N5 0 1N4148\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x component_5, 3x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"component_5\": 4, \"diode\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nD3 N3 0 1N4148\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x component_5, 1x diode, 1x inductor, 1x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"component_5\": 3, \"diode\": 1, \"inductor\": 1, \"resistor\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nL1 N1 N2 10m\nR1 N1 N2 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 2x component_5, 1x diode, 1x inductor, 1x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"component_5\": 2, \"diode\": 1, \"inductor\": 1, \"resistor\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nL1 N1 N2 10m\nR1 N1 N2 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x resistor, 1x diode, 1x inductor, 1x battery, 1x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 2, \"diode\": 1, \"inductor\": 1, \"battery\": 1, \"component_5\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nD1 N1 0 1N4148\nR2 N2 N3 1k\nL1 N1 N2 10m\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x inductor, 2x diode, 1x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"inductor\": 4, \"diode\": 2, \"component_5\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nL1 N1 N2 10m\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nL2 N2 N3 10m\nL3 N3 N4 10m\nL4 N4 N5 10m\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 2x battery, 1x diode, 1x inductor, 3x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 8, \"by_type\": {\"capacitor\": 1, \"battery\": 2, \"diode\": 1, \"inductor\": 1, \"resistor\": 3}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nD1 N1 0 1N4148\nL1 N1 N2 10m\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x diode, 1x capacitor, 2x resistor, 1x component_5, 1x inductor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"diode\": 1, \"capacitor\": 1, \"resistor\": 2, \"component_5\": 1, \"inductor\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nC1 N1 0 100n\nR1 N1 N2 1k\nL1 N1 N2 10m\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x resistor, 3x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"resistor\": 1, \"component_5\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 5x resistor, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 5, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x resistor, 1x capacitor, 1x component_5, 1x inductor, 1x diode. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"resistor\": 3, \"capacitor\": 1, \"component_5\": 1, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nC1 N1 0 100n\nL1 N1 N2 10m\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 1x component_5, 1x battery, 1x diode, 1x resistor, 1x inductor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"capacitor\": 1, \"component_5\": 1, \"battery\": 1, \"diode\": 1, \"resistor\": 1, \"inductor\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nD1 N1 0 1N4148\nR1 N1 N2 1k\nL1 N1 N2 10m\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x inductor, 1x resistor, 1x capacitor, 1x component_5. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"inductor\": 1, \"resistor\": 1, \"capacitor\": 1, \"component_5\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nL1 N1 N2 10m\nR1 N1 N2 1k\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 6x resistor, 1x inductor, 2x component_5, 1x battery, 1x diode, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 12, \"by_type\": {\"resistor\": 6, \"inductor\": 1, \"component_5\": 2, \"battery\": 1, \"diode\": 1, \"capacitor\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nR6 N6 N7 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x component_5, 1x battery, 2x resistor, 1x inductor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"component_5\": 2, \"battery\": 1, \"resistor\": 2, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x resistor, 1x battery, 1x component_5, 1x capacitor, 1x diode. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 1, \"battery\": 1, \"component_5\": 1, \"capacitor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nC1 N1 0 100n\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x component_5, 1x battery, 2x resistor, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"component_5\": 1, \"battery\": 1, \"resistor\": 2, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 7x inductor, 1x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 8, \"by_type\": {\"inductor\": 7, \"component_5\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nL1 N1 N2 10m\nL2 N2 N3 10m\nL3 N3 N4 10m\nL4 N4 N5 10m\nL5 N5 N6 10m\nL6 N6 N7 10m\nL7 N7 N8 10m\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 1x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 4, \"component_5\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 2x component_5, 2x diode, 1x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"component_5\": 2, \"diode\": 2, \"resistor\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nR1 N1 N2 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 1x diode, 3x resistor, 1x inductor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"diode\": 1, \"resistor\": 3, \"inductor\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nR1 N1 N2 1k\nL1 N1 N2 10m\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x diode, 1x capacitor, 1x component_5, 1x battery, 1x resistor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"diode\": 1, \"capacitor\": 1, \"component_5\": 1, \"battery\": 1, \"resistor\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nC1 N1 0 100n\nR1 N1 N2 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 1x component_5, 2x resistor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"battery\": 1, \"component_5\": 1, \"resistor\": 2}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x diode, 3x resistor, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"diode\": 1, \"resistor\": 3, \"capacitor\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nR1 N1 N2 1k\nR2 N2 N3 1k\nC1 N1 0 100n\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x diode, 3x resistor, 1x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"diode\": 1, \"resistor\": 3, \"component_5\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x component_5, 2x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"component_5\": 2, \"resistor\": 2, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x resistor, 1x component_5, 1x capacitor. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"resistor\": 2, \"component_5\": 1, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nC1 N1 0 100n\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x capacitor, 1x battery, 3x resistor, 2x diode. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"capacitor\": 1, \"battery\": 1, \"resistor\": 3, \"diode\": 2}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nC1 N1 0 100n\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nD1 N1 0 1N4148\nD2 N2 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x component_5, 1x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"component_5\": 2, \"resistor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x component_5, 6x inductor, 1x battery, 1x capacitor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 9, \"by_type\": {\"component_5\": 1, \"inductor\": 6, \"battery\": 1, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nL1 N1 N2 10m\nC1 N1 0 100n\nL2 N2 N3 10m\nL3 N3 N4 10m\nL4 N4 N5 10m\nL5 N5 N6 10m\nL6 N6 N7 10m\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x component_5, 2x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"component_5\": 2, \"resistor\": 2, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x resistor, 2x diode, 1x inductor, 1x battery. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"resistor\": 2, \"diode\": 2, \"inductor\": 1, \"battery\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nL1 N1 N2 10m\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x inductor, 1x component_5, 2x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"inductor\": 1, \"component_5\": 1, \"resistor\": 2, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nL1 N1 N2 10m\nR1 N1 N2 1k\nR2 N2 N3 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x component_5, 5x resistor, 1x inductor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 8, \"by_type\": {\"component_5\": 1, \"resistor\": 5, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\nR5 N5 N6 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x component_5, 2x resistor, 1x inductor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"component_5\": 2, \"resistor\": 2, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x component_5, 1x resistor, 1x inductor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"component_5\": 2, \"resistor\": 1, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x diode, 1x inductor, 2x resistor, 1x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"diode\": 1, \"inductor\": 1, \"resistor\": 2, \"component_5\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nL1 N1 N2 10m\nR1 N1 N2 1k\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x component_5, 2x resistor, 1x diode, 1x inductor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"component_5\": 1, \"resistor\": 2, \"diode\": 1, \"inductor\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nD1 N1 0 1N4148\nL1 N1 N2 10m\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x component_5, 1x battery, 2x resistor, 1x inductor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"component_5\": 1, \"battery\": 1, \"resistor\": 2, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 4x resistor, 3x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"resistor\": 4, \"component_5\": 3}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nR4 N4 N5 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x component_5, 2x resistor, 1x inductor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"component_5\": 1, \"resistor\": 2, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 3x component_5, 1x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"component_5\": 3, \"resistor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x battery, 3x resistor, 1x inductor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"battery\": 1, \"resistor\": 3, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x diode, 1x inductor, 1x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 4, \"by_type\": {\"diode\": 2, \"inductor\": 1, \"component_5\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nL1 N1 N2 10m\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x component_5, 2x resistor, 1x inductor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"component_5\": 1, \"resistor\": 2, \"inductor\": 1, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x component_5, 2x resistor, 1x inductor, 2x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"component_5\": 2, \"resistor\": 2, \"inductor\": 1, \"diode\": 2}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nR2 N2 N3 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\nD2 N2 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x component_5, 1x resistor, 1x inductor, 2x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"component_5\": 1, \"resistor\": 1, \"inductor\": 1, \"diode\": 2}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\nD2 N2 0 1N4148\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x resistor, 1x inductor, 1x diode, 1x capacitor, 1x component_5. This appears to be an RC filter circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"resistor\": 1, \"inductor\": 1, \"diode\": 1, \"capacitor\": 1, \"component_5\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nR1 N1 N2 1k\nL1 N1 N2 10m\nD1 N1 0 1N4148\nC1 N1 0 100n\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 1x component_5, 1x inductor, 2x resistor, 1x diode. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 5, \"by_type\": {\"component_5\": 1, \"inductor\": 1, \"resistor\": 2, \"diode\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nL1 N1 N2 10m\nR1 N1 N2 1k\nD1 N1 0 1N4148\nR2 N2 N3 1k\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 2x diode, 3x resistor, 1x inductor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 6, \"by_type\": {\"diode\": 2, \"resistor\": 3, \"inductor\": 1}}"}
+{"instruction": "What limits the current through the diode in this circuit?", "input": "", "output": "A resistor in series with the diode limits the current flow."}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nR1 N1 N2 1k\nR2 N2 N3 1k\nR3 N3 N4 1k\nD2 N2 0 1N4148\nL1 N1 N2 10m\n.end"}
+{"instruction": "If all resistors were doubled in value, how would that affect the circuit?", "input": "", "output": "Doubling the resistance halves the current (by Ohm's law: I = V/R), reducing power dissipation and potentially dimming any LEDs or diodes."}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 6x diode, 1x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 7, \"by_type\": {\"diode\": 6, \"component_5\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nD1 N1 0 1N4148\nD2 N2 0 1N4148\nD3 N3 0 1N4148\nD4 N4 0 1N4148\nD5 N5 0 1N4148\nD6 N6 0 1N4148\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 7x inductor, 1x component_5, 1x capacitor. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 9, \"by_type\": {\"inductor\": 7, \"component_5\": 1, \"capacitor\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nL1 N1 N2 10m\nL2 N2 N3 10m\nL3 N3 N4 10m\nL4 N4 N5 10m\nL5 N5 N6 10m\nL6 N6 N7 10m\nL7 N7 N8 10m\nC1 N1 0 100n\n.end"}
+{"instruction": "Describe what this circuit does based on its components.", "input": "", "output": "This circuit contains: 7x inductor, 1x component_5. This is an electronic circuit."}
+{"instruction": "How many components are in this circuit?", "input": "", "output": "{\"total\": 8, \"by_type\": {\"inductor\": 7, \"component_5\": 1}}"}
+{"instruction": "Generate a SPICE-compatible netlist for this circuit.", "input": "", "output": "* Auto-generated netlist\nL1 N1 N2 10m\nL2 N2 N3 10m\nL3 N3 N4 10m\nL4 N4 N5 10m\nL5 N5 N6 10m\nL6 N6 N7 10m\nL7 N7 N8 10m\n.end"}
