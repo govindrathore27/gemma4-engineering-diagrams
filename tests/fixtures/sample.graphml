@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns">
   <key id="type" for="node" attr.name="type" attr.type="string"/>
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
   <graph id="G" edgedefault="directed">
-    <node id="P-101"><data key="type">pump</data></node>
-    <node id="V-101"><data key="type">valve</data></node>
-    <node id="V-102"><data key="type">valve</data></node>
-    <node id="TK-101"><data key="type">vessel</data></node>
+    <node id="P-101"><data key="type">pump</data><data key="label">pump</data></node>
+    <node id="V-101"><data key="type">valve</data><data key="label">valve</data></node>
+    <node id="V-102"><data key="type">valve</data><data key="label">valve</data></node>
+    <node id="TK-101"><data key="type">vessel</data><data key="label">vessel</data></node>
     <edge source="P-101" target="V-101"/>
     <edge source="V-101" target="TK-101"/>
     <edge source="V-102" target="TK-101"/>

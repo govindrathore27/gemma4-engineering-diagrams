@@ -78,9 +78,9 @@ def download_all(names: list[str] | None = None) -> None:
         print(f"Downloading {name}...")
         try:
             handlers[cfg["type"]](cfg)
-            print(f"  ✓ {name}")
+            print(f"  [OK] {name}")
         except Exception as e:
-            print(f"  ✗ {name}: {e}")
+            print(f"  [FAIL] {name}: {e}")
 
 
 if __name__ == "__main__":

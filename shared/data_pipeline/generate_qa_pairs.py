@@ -10,7 +10,7 @@ def parse_graphml(path: str) -> Iterator[dict]:
 
     component_types: dict[str, list[str]] = {}
     for node, data in G.nodes(data=True):
-        ctype = data.get("type", "unknown")
+        ctype = data.get("label", data.get("type", "unknown"))
         component_types.setdefault(ctype, []).append(node)
 
     for ctype, nodes in component_types.items():
@@ -22,14 +22,14 @@ def parse_graphml(path: str) -> Iterator[dict]:
             }
 
     pump_nodes = [
-        n for n, d in G.nodes(data=True) if "pump" in d.get("type", "").lower()
+        n for n, d in G.nodes(data=True) if "pump" in d.get("label", d.get("type", "")).lower()
     ]
     for pump in pump_nodes[:5]:
         reachable = list(nx.bfs_tree(G, pump, depth_limit=3).nodes())
         valves = [
             n
             for n in reachable
-            if "valve" in G.nodes[n].get("type", "").lower()
+            if "valve" in G.nodes[n].get("label", G.nodes[n].get("type", "")).lower()
         ]
         if valves:
             yield {
@@ -39,7 +39,7 @@ def parse_graphml(path: str) -> Iterator[dict]:
             }
 
     vessel_nodes = [
-        n for n, d in G.nodes(data=True) if "vessel" in d.get("type", "").lower()
+        n for n, d in G.nodes(data=True) if "vessel" in d.get("label", d.get("type", "")).lower()
     ]
     for vessel in vessel_nodes[:3]:
         if nx.is_directed(G):
@@ -55,7 +55,7 @@ def parse_graphml(path: str) -> Iterator[dict]:
 
 
 def parse_cghd(annotation_path: str) -> Iterator[dict]:
-    with open(annotation_path) as f:
+    with open(annotation_path, encoding="utf-8") as f:
         data = json.load(f)
 
     annotations = data.get("annotations", [])
@@ -107,7 +107,7 @@ def _circuit_description(components: list[str]) -> str:
 
 def _netlist_from_components(components: list[str]) -> str:
     lines = ["* Auto-generated netlist"]
-    r_idx = c_idx = d_idx = 1
+    r_idx = c_idx = l_idx = d_idx = 1
     for comp in components:
         cl = comp.lower()
         if "resistor" in cl:
@@ -116,6 +116,9 @@ def _netlist_from_components(components: list[str]) -> str:
         elif "capacitor" in cl:
             lines.append(f"C{c_idx} N{c_idx} 0 100n")
             c_idx += 1
+        elif "inductor" in cl:
+            lines.append(f"L{l_idx} N{l_idx} N{l_idx+1} 10m")
+            l_idx += 1
         elif "led" in cl or "diode" in cl:
             lines.append(f"D{d_idx} N{d_idx} 0 1N4148")
             d_idx += 1
@@ -124,7 +127,7 @@ def _netlist_from_components(components: list[str]) -> str:
 
 
 def parse_as1100(annotation_path: str) -> Iterator[dict]:
-    with open(annotation_path) as f:
+    with open(annotation_path, encoding="utf-8") as f:
         data = json.load(f)
 
     dimensions: list[dict] = data.get("dimensions", [])
@@ -138,11 +141,14 @@ def parse_as1100(annotation_path: str) -> Iterator[dict]:
             ),
         }
 
-    tols = [
-        (d["label"], float(d["tolerance"]))
-        for d in dimensions
-        if "tolerance" in d and "label" in d
-    ]
+    tols = []
+    for d in dimensions:
+        if "tolerance" not in d or "label" not in d:
+            continue
+        try:
+            tols.append((d["label"], float(d["tolerance"])))
+        except (ValueError, TypeError):
+            continue
     if tols:
         tightest = min(tols, key=lambda x: x[1])
         yield {
@@ -189,6 +195,6 @@ def parse(format: str, path: str) -> list[dict]:
 
 def save_jsonl(pairs: list[dict], dest: str) -> None:
     Path(dest).parent.mkdir(parents=True, exist_ok=True)
-    with open(dest, "w") as f:
+    with open(dest, "w", encoding="utf-8") as f:
         for pair in pairs:
             f.write(json.dumps(pair) + "\n")
