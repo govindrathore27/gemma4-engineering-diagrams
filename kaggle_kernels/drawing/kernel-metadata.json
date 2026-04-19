@@ -1,13 +1,14 @@
 {
-  "id": "govindsrathore/engineering-drawing-tutor-gemma4",
-  "title": "Engineering Drawing Tutor Gemma4",
+  "id": "govindsrathore/engineering-drawing-tutor",
+  "id_no": 116232017,
+  "title": "Engineering Drawing Tutor",
   "code_file": "notebook.ipynb",
   "language": "python",
   "kernel_type": "notebook",
   "is_private": false,
   "enable_gpu": true,
   "enable_internet": true,
-  "dataset_sources": ["govindsrathore/gemma4-drawing-train-data"],
+  "dataset_sources": [],
   "competition_sources": ["gemma-4-good-hackathon"],
   "kernel_sources": []
 }
