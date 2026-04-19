@@ -1,6 +1,6 @@
 {
-  "id": "govindsrathore/gemma4-engineering-drawing-tutor",
-  "title": "Engineering Drawing Tutor - Gemma 4 E4B",
+  "id": "govindsrathore/engineering-drawing-tutor-gemma4",
+  "title": "Engineering Drawing Tutor Gemma4",
   "code_file": "notebook.ipynb",
   "language": "python",
   "kernel_type": "notebook",
