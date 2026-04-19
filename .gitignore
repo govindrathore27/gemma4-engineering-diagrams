@@ -2,6 +2,8 @@ project1_pid_copilot/data/pid2graph/*.graphml
 project1_pid_copilot/data/pid2graph/PID2Graph/
 project1_pid_copilot/data/pid2graph/*.zip
 project1_pid_copilot/data/pid_symbols/
+project2_circuit_tutor/data/cghd/*.zip
+project2_circuit_tutor/data/cghd/cghd*/
 __pycache__/
 **/__pycache__/
 .coverage
