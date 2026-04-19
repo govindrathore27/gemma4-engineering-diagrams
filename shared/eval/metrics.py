@@ -15,6 +15,8 @@ def token_f1(predicted: str, expected: str) -> float:
     """
     pred_tokens = Counter(predicted.lower().split())
     exp_tokens = Counter(expected.lower().split())
+    if not pred_tokens and not exp_tokens:
+        return 1.0
     common = sum((pred_tokens & exp_tokens).values())
     if common == 0:
         return 0.0
@@ -40,9 +42,9 @@ def exact_match(predicted: str, expected: str) -> float:
     try:
         pred_obj = json.loads(predicted)
         exp_obj = json.loads(expected)
-        pred_set = set(pred_obj.get("components", [str(pred_obj)]))
-        exp_set = set(exp_obj.get("components", [str(exp_obj)]))
-        return float(pred_set == exp_set)
+        if "components" in pred_obj and "components" in exp_obj:
+            return float(set(pred_obj["components"]) == set(exp_obj["components"]))
+        return float(pred_obj == exp_obj)
     except (json.JSONDecodeError, AttributeError):
         return float(predicted.strip() == expected.strip())
 
@@ -60,11 +62,12 @@ def bleu_1(predicted: str, expected: str) -> float:
     Returns:
         Score between 0.0 and 1.0
     """
-    pred = predicted.lower().split()
-    exp_set = set(expected.lower().split())
-    if not pred:
+    pred_tokens = predicted.lower().split()
+    exp_counts = Counter(expected.lower().split())
+    if not pred_tokens:
         return 0.0
-    return sum(1 for t in pred if t in exp_set) / len(pred)
+    clipped = sum(min(pred_tokens.count(t), exp_counts[t]) for t in set(pred_tokens))
+    return clipped / len(pred_tokens)
 
 
 def evaluate_batch(
@@ -85,10 +88,17 @@ def evaluate_batch(
             - scores: List of individual scores
 
     Raises:
-        ValueError: If metric is not recognized
+        ValueError: If metric is not recognized or lists have unequal length
     """
+    if len(predictions) != len(expected):
+        raise ValueError(
+            f"predictions and expected must have equal length, "
+            f"got {len(predictions)} and {len(expected)}"
+        )
     fns = {"f1": token_f1, "exact": exact_match, "bleu": bleu_1}
     if metric not in fns:
         raise ValueError(f"Unknown metric '{metric}'. Choose from: {list(fns)}")
+    if not predictions:
+        return {"metric": metric, "mean": 0.0, "scores": []}
     scores = [fns[metric](p, e) for p, e in zip(predictions, expected)]
     return {"metric": metric, "mean": sum(scores) / len(scores), "scores": scores}
