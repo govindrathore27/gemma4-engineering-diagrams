@@ -1,12 +1,11 @@
 from typing import Tuple, Any
 
 
-def load_model(adapter_dir: str, base_model: str = "google/gemma-4-e4b-it") -> Tuple[Any, Any]:
+def load_model(adapter_dir: str) -> Tuple[Any, Any]:
     """Load a LoRA adapter from disk using unsloth.
 
     Args:
         adapter_dir: Path to the adapter directory. Must be non-empty.
-        base_model: Base model name (default: "google/gemma-4-e4b-it")
 
     Returns:
         Tuple of (model, tokenizer)
@@ -44,11 +43,13 @@ def run(model: Any, tokenizer: Any, instruction: str, context: str = "") -> str:
         f"<start_of_turn>user\n{instruction}\n{context}<end_of_turn>\n"
         "<start_of_turn>model\n"
     )
-    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
-    outputs = model.generate(**inputs, max_new_tokens=512, temperature=0.1, do_sample=False)
+    inputs = tokenizer(prompt, return_tensors="pt")
+    input_ids = inputs["input_ids"].to(model.device)
+    outputs = model.generate(input_ids=input_ids, max_new_tokens=512, do_sample=False)
     decoded = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
     # Extract model response, with fallback to full string if delimiter not found
     if "<start_of_turn>model\n" in decoded:
-        return decoded.split("<start_of_turn>model\n")[-1].strip()
+        response = decoded.split("<start_of_turn>model\n")[-1].strip()
+        return response.removesuffix("<end_of_turn>").strip()
     return decoded.strip()

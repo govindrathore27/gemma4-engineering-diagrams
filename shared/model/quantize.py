@@ -2,7 +2,8 @@
 """Export a LoRA adapter to GGUF 4-bit for offline (llama.cpp) use."""
 from pathlib import Path
 
-SUPPORTED_QUANT_TYPES = ["q4_k_m", "q8_0", "f16"]
+# Curated subset of Unsloth-supported quantization methods for this project
+SUPPORTED_QUANT_TYPES = ["q2_k", "q4_k_m", "q5_k_m", "q6_k", "q8_0", "f16", "bf16"]
 
 
 def export_gguf(adapter_dir: str, output_path: str, quant_type: str = "q4_k_m") -> None:
@@ -36,12 +37,10 @@ def export_gguf(adapter_dir: str, output_path: str, quant_type: str = "q4_k_m") 
             "Ensure the training step completed and the adapter was saved."
         )
 
-    # Create output directory
     out = Path(output_path)
     out.parent.mkdir(parents=True, exist_ok=True)
 
     print(f"Loading adapter from {adapter_dir}...")
-    print(f"Exporting to GGUF with quantization: {quant_type}")
 
     # Defer heavy imports until inside function
     from unsloth import FastLanguageModel
@@ -54,12 +53,13 @@ def export_gguf(adapter_dir: str, output_path: str, quant_type: str = "q4_k_m") 
     )
 
     # Export to GGUF
-    model.save_pretrained_gguf(
-        str(out.parent),
-        tokenizer,
-        quantization_method=quant_type,
-    )
-    print(f"GGUF exported to {out.parent}")
+    print(f"Exporting to GGUF with quantization: {quant_type}")
+    model.save_pretrained_gguf(str(out.parent), tokenizer, quantization_method=quant_type)
+    # Rename the generated file to the requested output path
+    generated = next(out.parent.glob("*.gguf"), None)
+    if generated and generated != out:
+        generated.rename(out)
+    print(f"GGUF exported to {out}")
 
 
 if __name__ == "__main__":
