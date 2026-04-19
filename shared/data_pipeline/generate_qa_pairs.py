@@ -53,6 +53,42 @@ def parse_graphml(path: str) -> Iterator[dict]:
             "output": json.dumps({"vessel": vessel, "single_point_failures": spf}),
         }
 
+    # Count components by label
+    label_counts: dict[str, int] = {}
+    for node, data in G.nodes(data=True):
+        lbl = data.get("label", data.get("type", "unknown"))
+        label_counts[lbl] = label_counts.get(lbl, 0) + 1
+
+    yield {
+        "instruction": "How many components of each type are in this P&ID?",
+        "input": "",
+        "output": json.dumps(label_counts),
+    }
+
+    # List all instrumentation nodes
+    instr_nodes = [
+        n for n, d in G.nodes(data=True)
+        if "instrument" in d.get("label", d.get("type", "")).lower()
+    ]
+    if instr_nodes:
+        yield {
+            "instruction": "List all instrumentation components in this P&ID.",
+            "input": "",
+            "output": json.dumps({"instrumentation": instr_nodes, "count": len(instr_nodes)}),
+        }
+
+    # List connectors
+    connector_nodes = [
+        n for n, d in G.nodes(data=True)
+        if "connector" in d.get("label", d.get("type", "")).lower()
+    ]
+    if connector_nodes:
+        yield {
+            "instruction": "List all connectors in this P&ID.",
+            "input": "",
+            "output": json.dumps({"connectors": connector_nodes[:20], "total_count": len(connector_nodes)}),
+        }
+
 
 def parse_cghd(annotation_path: str) -> Iterator[dict]:
     with open(annotation_path, encoding="utf-8") as f:
