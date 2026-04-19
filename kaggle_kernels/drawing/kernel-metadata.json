@@ -1,0 +1,13 @@
+{
+  "id": "govindsrathore/gemma4-engineering-drawing-tutor",
+  "title": "Engineering Drawing Tutor - Gemma 4 E4B",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["govindsrathore/gemma4-drawing-train-data"],
+  "competition_sources": ["gemma-4-good-hackathon"],
+  "kernel_sources": []
+}
