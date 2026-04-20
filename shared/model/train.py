@@ -91,7 +91,6 @@ def train(cfg: TrainConfig) -> None:
             save_strategy="epoch",
             logging_steps=10,
             report_to="none",
-            no_cuda=False,
             ddp_find_unused_parameters=False if num_gpus > 1 else None,
         ),
     )
