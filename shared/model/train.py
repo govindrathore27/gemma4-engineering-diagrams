@@ -43,10 +43,14 @@ def train(cfg: TrainConfig) -> None:
     from datasets import Dataset
     import torch
 
+    num_gpus = torch.cuda.device_count() if torch.cuda.is_available() else 0
+    device_map = "balanced" if num_gpus > 1 else "cuda:0"
+
     model, tokenizer = FastLanguageModel.from_pretrained(
         model_name=cfg.base_model,
         max_seq_length=cfg.max_seq_len,
         load_in_4bit=True,
+        device_map=device_map,
     )
     model = FastLanguageModel.get_peft_model(
         model,
@@ -87,6 +91,8 @@ def train(cfg: TrainConfig) -> None:
             save_strategy="epoch",
             logging_steps=10,
             report_to="none",
+            no_cuda=False,
+            ddp_find_unused_parameters=False if num_gpus > 1 else None,
         ),
     )
     trainer.train()
