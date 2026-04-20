@@ -6,6 +6,7 @@
   "kernel_type": "notebook",
   "is_private": false,
   "enable_gpu": true,
+  "machine_shape": "gpu_t4_x2",
   "enable_internet": true,
   "dataset_sources": ["govindsrathore/gemma4-circuit-train-data"],
   "competition_sources": ["gemma-4-good-hackathon"],
