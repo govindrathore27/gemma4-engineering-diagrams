@@ -36,20 +36,31 @@ def _format_row(row: dict) -> str:
     )
 
 
-def _patch_quantization_flags(model) -> None:
-    """Clear bnb quantization flags so accelerate allows multi-device models.
+def _free_multimodal_towers(model) -> None:
+    """Delete vision/audio towers to free VRAM for text-only training.
 
-    Unsloth always loads the pre-quantized 4-bit variant regardless of
-    load_in_4bit=False. accelerate refuses to prepare quantized models that
-    span multiple devices, but the per-layer bnb ops still work correctly
-    on their assigned device once the guard is removed.
+    Gemma4ForConditionalGeneration only calls these when pixel_values /
+    input_features are passed. For text-only SFT we never pass them, so
+    the towers can be dropped after loading without breaking forward.
     """
-    for obj in [model, getattr(model, "model", None), getattr(model, "base_model", None)]:
-        if obj is None:
+    import gc
+    import torch
+    _TOWER_ATTRS = (
+        "vision_tower", "audio_tower",
+        "multi_modal_projector", "image_newline",
+    )
+    freed = False
+    for parent in [model, getattr(model, "model", None)]:
+        if parent is None:
             continue
-        for attr in ("is_loaded_in_4bit", "is_loaded_in_8bit"):
-            if getattr(obj, attr, False):
-                setattr(obj, attr, False)
+        for attr in _TOWER_ATTRS:
+            if getattr(parent, attr, None) is not None:
+                setattr(parent, attr, None)
+                freed = True
+    if freed:
+        gc.collect()
+        torch.cuda.empty_cache()
+        print("Freed vision/audio towers — VRAM reclaimed for text training")
 
 
 def train(cfg: TrainConfig) -> None:
@@ -59,19 +70,14 @@ def train(cfg: TrainConfig) -> None:
     from datasets import Dataset
     import torch
 
-    num_gpus = torch.cuda.device_count() if torch.cuda.is_available() else 0
-    use_multi_gpu = num_gpus > 1
-    device_map = "balanced" if use_multi_gpu else {"": 0}
-
     model, tokenizer = FastLanguageModel.from_pretrained(
         model_name=cfg.base_model,
         max_seq_length=cfg.max_seq_len,
         load_in_4bit=True,
-        device_map=device_map,
+        device_map={"": 0},
     )
 
-    if use_multi_gpu:
-        _patch_quantization_flags(model)
+    _free_multimodal_towers(model)
 
     model = FastLanguageModel.get_peft_model(
         model,
@@ -82,9 +88,6 @@ def train(cfg: TrainConfig) -> None:
         bias="none",
         use_gradient_checkpointing="unsloth",
     )
-
-    if use_multi_gpu:
-        _patch_quantization_flags(model)
 
     torch.cuda.empty_cache()
 
@@ -118,7 +121,6 @@ def train(cfg: TrainConfig) -> None:
             logging_steps=10,
             report_to="none",
             optim="paged_adamw_8bit",
-            ddp_find_unused_parameters=False if use_multi_gpu else None,
         ),
     )
     trainer.train()
