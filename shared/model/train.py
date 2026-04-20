@@ -36,6 +36,22 @@ def _format_row(row: dict) -> str:
     )
 
 
+def _patch_quantization_flags(model) -> None:
+    """Clear bnb quantization flags so accelerate allows multi-device models.
+
+    Unsloth always loads the pre-quantized 4-bit variant regardless of
+    load_in_4bit=False. accelerate refuses to prepare quantized models that
+    span multiple devices, but the per-layer bnb ops still work correctly
+    on their assigned device once the guard is removed.
+    """
+    for obj in [model, getattr(model, "model", None), getattr(model, "base_model", None)]:
+        if obj is None:
+            continue
+        for attr in ("is_loaded_in_4bit", "is_loaded_in_8bit"):
+            if getattr(obj, attr, False):
+                setattr(obj, attr, False)
+
+
 def train(cfg: TrainConfig) -> None:
     from unsloth import FastLanguageModel
     from trl import SFTTrainer
@@ -44,25 +60,19 @@ def train(cfg: TrainConfig) -> None:
     import torch
 
     num_gpus = torch.cuda.device_count() if torch.cuda.is_available() else 0
-
-    # bitsandbytes 4-bit requires the whole model on one device, so with
-    # multiple GPUs we load float16 and let device_map split across them.
-    if num_gpus > 1:
-        device_map = "balanced"
-        load_in_4bit = False
-        dtype = torch.float16
-    else:
-        device_map = "cuda:0"
-        load_in_4bit = True
-        dtype = None
+    use_multi_gpu = num_gpus > 1
+    device_map = "balanced" if use_multi_gpu else {"": 0}
 
     model, tokenizer = FastLanguageModel.from_pretrained(
         model_name=cfg.base_model,
         max_seq_length=cfg.max_seq_len,
-        load_in_4bit=load_in_4bit,
-        dtype=dtype,
+        load_in_4bit=True,
         device_map=device_map,
     )
+
+    if use_multi_gpu:
+        _patch_quantization_flags(model)
+
     model = FastLanguageModel.get_peft_model(
         model,
         r=cfg.lora_r,
@@ -72,6 +82,11 @@ def train(cfg: TrainConfig) -> None:
         bias="none",
         use_gradient_checkpointing="unsloth",
     )
+
+    if use_multi_gpu:
+        _patch_quantization_flags(model)
+
+    torch.cuda.empty_cache()
 
     data_path = Path(cfg.data_path)
     if not data_path.exists():
@@ -102,7 +117,8 @@ def train(cfg: TrainConfig) -> None:
             save_strategy="epoch",
             logging_steps=10,
             report_to="none",
-            ddp_find_unused_parameters=False if num_gpus > 1 else None,
+            optim="paged_adamw_8bit",
+            ddp_find_unused_parameters=False if use_multi_gpu else None,
         ),
     )
     trainer.train()
