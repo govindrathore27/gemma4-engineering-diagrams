@@ -44,12 +44,23 @@ def train(cfg: TrainConfig) -> None:
     import torch
 
     num_gpus = torch.cuda.device_count() if torch.cuda.is_available() else 0
-    device_map = "balanced" if num_gpus > 1 else "cuda:0"
+
+    # bitsandbytes 4-bit requires the whole model on one device, so with
+    # multiple GPUs we load float16 and let device_map split across them.
+    if num_gpus > 1:
+        device_map = "balanced"
+        load_in_4bit = False
+        dtype = torch.float16
+    else:
+        device_map = "cuda:0"
+        load_in_4bit = True
+        dtype = None
 
     model, tokenizer = FastLanguageModel.from_pretrained(
         model_name=cfg.base_model,
         max_seq_length=cfg.max_seq_len,
-        load_in_4bit=True,
+        load_in_4bit=load_in_4bit,
+        dtype=dtype,
         device_map=device_map,
     )
     model = FastLanguageModel.get_peft_model(
