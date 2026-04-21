@@ -50,13 +50,17 @@ def _free_multimodal_towers(model) -> None:
         "multi_modal_projector", "image_newline",
     )
     freed = False
-    for parent in [model, getattr(model, "model", None)]:
-        if parent is None:
-            continue
+    # Walk up to 3 levels: unsloth wrapper → ForConditionalGeneration → inner model
+    obj = model
+    for _ in range(4):
+        if obj is None:
+            break
         for attr in _TOWER_ATTRS:
-            if getattr(parent, attr, None) is not None:
-                setattr(parent, attr, None)
+            if getattr(obj, attr, None) is not None:
+                print(f"Freeing {type(obj).__name__}.{attr}")
+                setattr(obj, attr, None)
                 freed = True
+        obj = getattr(obj, "model", None)
     if freed:
         gc.collect()
         torch.cuda.empty_cache()
